@@ -1,12 +1,5 @@
-var elem = document.getElementById("lastname");
-
-// Attention : message(); ou message(param); ne fonctionneront pas ici,
-// il doit s'agir d'une référence au nom d'une fonction et non d'un appel de cette fonction
-
-elem.onblur = message;
-
-function message() {
-  alert("Merci de votre participation");
+// On déclare la fonction avec comme nom: lossfocus
+// afficher une boite de dialogue avec le message : "Merci de votre participation" quand le champ de saisie perd le focus.
+function lossfocus() {
+  alert('Merci de votre participation');
 }
-
-// La propriété onblur renvoie le gestionnaire de l'évènement blur (perte de focus) pour l'élément courant.

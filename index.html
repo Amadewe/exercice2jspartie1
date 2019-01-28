@@ -6,7 +6,8 @@
 </head>
 <body>
   <form>
-    <label for="lastname">Votre nom  : </label><input type="text" name="lastname" id="lastname"/>
+    <label for="lastname">Votre nom  : </label><input type="text" name="lastname" id="lastname" onblur="lossfocus()"/>
+    <!-- L'évènement onblur se déclenche lorsque la balise sur laquelle il est appliqué perd le focus. -->
   </form>
   <script src="assets/js/script.js"></script>
 </body>
